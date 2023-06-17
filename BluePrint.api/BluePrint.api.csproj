@@ -10,5 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BluePrint.core\BluePrint.core.csproj" />
+    <ProjectReference Include="..\BluePrint.services\BluePrint.services.csproj" />
+  </ItemGroup>
+
 </Project>
 
