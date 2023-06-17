@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrint.core", "BluePrint
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrint.services", "BluePrint.services\BluePrint.services.csproj", "{3F0A69FB-2D74-4076-B834-15D6564F4F61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluePrint.shared.services", "BluePrint.shared.services\BluePrint.shared.services.csproj", "{C780F716-56FE-4BD4-99D6-2A86B03BD8A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3F0A69FB-2D74-4076-B834-15D6564F4F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F0A69FB-2D74-4076-B834-15D6564F4F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F0A69FB-2D74-4076-B834-15D6564F4F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C780F716-56FE-4BD4-99D6-2A86B03BD8A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C780F716-56FE-4BD4-99D6-2A86B03BD8A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C780F716-56FE-4BD4-99D6-2A86B03BD8A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C780F716-56FE-4BD4-99D6-2A86B03BD8A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

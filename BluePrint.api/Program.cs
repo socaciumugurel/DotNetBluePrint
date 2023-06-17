@@ -1,5 +1,8 @@
+using BluePrint.api.Infrastructure;
 using BluePrint.core.Infrastructure;
 using BluePrint.core.Infrastructure.RegistrationStrategies;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +13,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var azureConnectionString = builder.Configuration.GetSection("ConnectionStrings:AzureBlob").Value;
+
 var assemblies = AssemblyLoader.GetReferencingAssemblies(nameof(BluePrint));
 builder.Services.Execute(() => ServicesRegistrationStrategy.Create(assemblies));
+
+builder.Services.Execute(() => AzureBlobRegistrationStrategy.Create(azureConnectionString));
 
 var app = builder.Build();
 
