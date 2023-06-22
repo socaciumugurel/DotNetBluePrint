@@ -6,5 +6,10 @@
         {
             public const string PRODUCT = "product";
         }
+        public static class Languages
+        {
+            public const string ENGLISH = "en";
+            public const string FRENCH = "fr";
+        }
     }
 }

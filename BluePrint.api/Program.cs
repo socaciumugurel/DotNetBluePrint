@@ -1,6 +1,7 @@
 using BluePrint.api.Infrastructure;
 using BluePrint.core.Infrastructure;
 using BluePrint.core.Infrastructure.RegistrationStrategies;
+using BluePrint.shared.services.Translations;
 
 
 
@@ -19,8 +20,10 @@ var assemblies = AssemblyLoader.GetReferencingAssemblies(nameof(BluePrint));
 builder.Services.Execute(() => ServicesRegistrationStrategy.Create(assemblies));
 
 builder.Services.Execute(() => AzureBlobRegistrationStrategy.Create(azureConnectionString));
+builder.Services.AddLocalization(l => { l.ResourcesPath = "Resources"; });
 
 var app = builder.Build();
+app.Execute(ResourceInitializationStrategy.Create(app));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -5,11 +5,14 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="Azure.Storage.Blobs" Version="12.15.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Localization" Version="2.2.0" />
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
     <PackageVersion Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
     <PackageVersion Include="Microsoft.Extensions.Azure" Version="1.6.3" />
     <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageVersion Include="Microsoft.Extensions.DependencyModel" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Localization.Abstractions" Version="7.0.7" />
     <PackageVersion Include="Microsoft.Owin.StaticFiles" Version="4.2.2" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>

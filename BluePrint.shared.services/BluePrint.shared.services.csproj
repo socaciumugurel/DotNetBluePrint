@@ -7,7 +7,10 @@
   </PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Azure.Storage.Blobs" />
+		<PackageReference Include="Microsoft.AspNetCore.Localization" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Localization" />
 		<PackageReference Include="Microsoft.AspNetCore.StaticFiles" />
+		<PackageReference Include="Microsoft.Extensions.Localization.Abstractions" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\BluePrint.core\BluePrint.core.csproj" />
